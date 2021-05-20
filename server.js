@@ -25,6 +25,10 @@ app.use("/sendmail", async(req, res, next) => {
 })
 
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my nodemailer API');
+})
+
 const port = process.env.PORT || 3030;
 
 app.listen(port, () => {
